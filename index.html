@@ -5,13 +5,120 @@
   <title>Meetenant</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
- <app-root></app-root>
-  <script>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="icon" type="image/png" href="assets/logo-color.png" />
 
-  </script>
-<script src="runtime-es2015.js" type="module"></script><script src="polyfills-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="scripts.js" defer></script><script src="vendor-es2015.js" type="module"></script><script src="main-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es5.js" nomodule defer></script></body>
+<!--  Cross Platform-->
+<!--  <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='/favicon.ico'> &lt;!&ndash; IE &ndash;&gt;-->
+<!--  <link rel='apple-touch-icon' type='image/png' href='/icon.57.png'> &lt;!&ndash; iPhone &ndash;&gt;-->
+<!--  <link rel='apple-touch-icon' type='image/png' sizes='72x72' href='/icon.72.png'> &lt;!&ndash; iPad &ndash;&gt;-->
+<!--  <link rel='apple-touch-icon' type='image/png' sizes='114x114' href='/icon.114.png'> &lt;!&ndash; iPhone4 &ndash;&gt;-->
+<!--  <link rel='icon' type='image/png' href='/icon.114.png'> &lt;!&ndash; Opera Speed Dial, at least 144×114 px &ndash;&gt;-->
+
+  <!--  FOR PRODUCTION USE ONLY-->
+  <!--  <script-->
+  <!--    src="https://code.jquery.com/jquery-2.2.4.min.js"-->
+  <!--    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
+  <!--    crossorigin="anonymous"></script>-->
+  <style type="text/css">.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #009688;
+    z-index: 9999;
+    transition: opacity .65s
+  }
+
+  .preloader-hidden-add {
+    opacity: 1;
+    display: block
+  }
+
+  .preloader-hidden-add-active {
+    opacity: 0
+  }
+
+  .preloader-hidden {
+    display: none
+  }
+
+  .cs-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+  }
+
+  .cs-loader-inner {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center
+  }
+
+  .cs-loader-inner label {
+    font-size: 20px;
+    opacity: 0;
+    display: inline-block
+  }
+
+  @keyframes lol {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px)
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0)
+    }
+    66% {
+      opacity: 1;
+      transform: translateX(0)
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(300px)
+    }
+  }
+
+  .cs-loader-inner label:nth-child(6) {
+    animation: lol 3s infinite ease-in-out
+  }
+
+  .cs-loader-inner label:nth-child(5) {
+    animation: lol 3s .1s infinite ease-in-out
+  }
+
+  .cs-loader-inner label:nth-child(4) {
+    animation: lol 3s .2s infinite ease-in-out
+  }
+
+  .cs-loader-inner label:nth-child(3) {
+    animation: lol 3s .3s infinite ease-in-out
+  }
+
+  .cs-loader-inner label:nth-child(2) {
+    animation: lol 3s .4s infinite ease-in-out
+  }
+
+  .cs-loader-inner label:nth-child(1) {
+    animation: lol 3s .5s infinite ease-in-out
+  }</style>
+<link rel="stylesheet" href="styles.39292484508d1f4d3bdc.css"></head>
+<body>
+<app-root></app-root>
+
+<div class="preloader">
+  <div class="cs-loader">
+    <div class="cs-loader-inner"><label> ●</label><label> ●</label><label> ●</label><label> ●</label><label>
+      ●</label><label> ●</label></div>
+  </div>
+<script src="runtime-es2015.1d8c39bf8af8ca7126e9.js" type="module"></script><script src="polyfills-es2015.e5df1e58dacc54aea0c1.js" type="module"></script><script src="runtime-es5.bbf092e00283d094f4df.js" nomodule defer></script><script src="polyfills-es5.2486f27f3fb92e656f2e.js" nomodule defer></script><script src="scripts.021a4522649fd4c923a3.js" defer></script><script src="main-es2015.e7961829f1c07572db82.js" type="module"></script><script src="main-es5.36ad3c7f3a2150ba58cf.js" nomodule defer></script></body>
 </html>
+
